@@ -1,0 +1,33 @@
+{
+  "cluster_name": "DataJam",
+  "spark_version": "16.4.x-scala2.12",
+  "spark_version_description": "16.4 LTS (includes Apache Spark 3.5.2, Scala 2.12)",
+  "node_type_id": "Standard_D3_v2",
+  "node_type_description": "14 GB Memory, 4 Cores",
+  "driver_node_type_id": "Standard_D3_v2",
+  "num_workers": 2,
+  "autoscale": null,
+  "autotermination_minutes": 120,
+  "enable_elastic_disk": false,
+  "cluster_source": "UI",
+  "spark_conf": {
+    "spark.sql.extensions": "org.apache.iceberg.spark.extensions.IcebergSparkSessionExtensions",
+    "spark.sql.catalog.hz": "org.apache.iceberg.spark.SparkCatalog",
+    "spark.sql.catalog.hz.type": "rest",
+    "spark.sql.catalog.hz.header.X-Iceberg-Access-Delegation": "vended-credentials",
+    "spark.sql.catalog.hz.io-impl": "org.apache.iceberg.aws.s3.S3FileIO",
+    "spark.sql.catalog.hz.client.region": "us-west-2",
+    "spark.driver.extraJavaOptions": "-Daws.region=us-west-2",
+    "spark.executor.extraJavaOptions": "-Daws.region=us-west-2"
+  },
+  "spark_env_vars": {},
+  "custom_tags": {},
+  "cluster_log_conf": null,
+  "init_scripts": [],
+  "docker_image": null,
+  "policy_id": "unrestricted",
+  "enable_local_disk_encryption": false,
+  "runtime_engine": "STANDARD",
+  "notes": "Cluster configured for Snowflake Polaris Iceberg demo with REST catalog support"
+}
+

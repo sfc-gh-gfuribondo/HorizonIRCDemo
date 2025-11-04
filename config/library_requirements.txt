@@ -1,0 +1,24 @@
+# Apache Iceberg Library Requirements for Databricks
+# Install these libraries on your Databricks cluster
+
+# For Databricks Runtime 16.4 LTS (Spark 3.5.2, Scala 2.12)
+# Maven Coordinates:
+org.apache.iceberg:iceberg-spark-runtime-3.5_2.12:1.5.0
+
+# Alternative versions for different Databricks Runtimes:
+# DBR 15.x (Spark 3.5): org.apache.iceberg:iceberg-spark-runtime-3.5_2.12:1.5.0
+# DBR 13.x, 14.x (Spark 3.4): org.apache.iceberg:iceberg-spark-runtime-3.4_2.12:1.4.3
+# DBR 12.x (Spark 3.3): org.apache.iceberg:iceberg-spark-runtime-3.3_2.12:1.4.3
+
+# AWS Bundle (for S3 support, if needed)
+# org.apache.iceberg:iceberg-aws-bundle:1.5.0
+
+# Installation Instructions:
+# 1. Go to your Databricks cluster
+# 2. Click on "Libraries" tab
+# 3. Click "Install New"
+# 4. Select "Maven"
+# 5. Enter the coordinates above for your DBR version
+# 6. Click "Install"
+# 7. Restart your cluster
+

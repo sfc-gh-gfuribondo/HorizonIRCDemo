@@ -1,0 +1,73 @@
+# Databricks notebook checkpoints
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Credentials and secrets - NEVER commit these!
+**/credentials.json
+**/secrets.json
+**/*_token.txt
+**/*_pat.txt
+.env
+.env.local
+
+# Databricks
+.databricks/
+*.dbc
+
+# Snowflake
+*.snowflake
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+temp/
+tmp/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Project specific
+# Uncomment if you want to ignore cluster PDFs
+# *.pdf
+
+# Backup files
+*.bak
+*.backup
+*_backup.*
+
+# Configuration files with secrets (if you create them)
+config/credentials.json
+config/.env
+config/secrets.*
+
+# Documentation builds
+docs/_build/
+docs/.doctrees/
+
+# Jupyter Notebook metadata
+.ipynb_checkpoints
+*.ipynb.~*
+
