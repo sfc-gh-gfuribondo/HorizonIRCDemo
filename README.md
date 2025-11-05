@@ -36,6 +36,7 @@ This repository demonstrates data federation between Snowflake and Databricks us
 - Snowflake account (Enterprise Edition or trial with Polaris enabled)
 - ACCOUNTADMIN role access
 - Polaris catalog feature enabled
+- PrPr features enabled (snowflake managed storage, horizon polaris endpoint)
 
 ### Databricks Requirements:
 - Databricks workspace
